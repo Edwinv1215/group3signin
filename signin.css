@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto;
+}
+
+body {
+    display:flex;
+   justify-content: space-around;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-image: url("Group15.png");
+    background-color: blue;
+    color: white;
+    padding: 350px 100px;
+
+    
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.inputfields {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+input {
+    margin: 20px
+}
+
+.signupbtn {
+    background-color: rgb(39, 39, 246);
+    border-radius: 20px;
+    
+}
