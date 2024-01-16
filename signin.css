@@ -1,135 +1,98 @@
-/* Buhay created the skeleton for the html and CSS */
+/*Buhay created the skeleton for the html and CSS*/
 
-* {
+*{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     font-family: Roboto;
 }
-
 body {
     display:flex;
    justify-content: space-between;
 }
 /* xEdwin  added img,background-color,border-radius,flex,hight,width,margin padding,color, */
-
 .box1 {
     display: flex;
     flex-direction: column;
-
     background-repeat: no-repeat;
     background-color: blue;
     color: white;
     text-align: center;
     width:  700px;
     height: 800px;
-   
-
-  border-radius: 0% 65% 85% 14% / 10% 0% 100% 2%;     
-    
+  border-radius: 0% 65% 85% 14% / 10% 0% 100% 2%;    
 }
 .h3 {
     margin-top: 80px;
 }
-
 h3 {
     margin: 5px;
-
 }
-
-
 .img{
-   
     width:  400px;
     height: 390px;
-   
 }
-
-.moon{
-    display: flex;
-    justify-content: center;
-    
-}
-
 .signupbtn {
     background-color: rgb(39, 39, 246);
     margin-left: 35%;
-    padding: auto; 
-    
+    padding: auto;
 }
-
-button:hover {
-    cursor: pointer
-}
-
-
-/*Jay width,height,padding,margin,postion,left,top,border-radius */
-
+/*Jay width,height,padding,margin,postion,left,top,border-radius and focus*/
 .box2 {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
     margin-right: 100px;
-
 }
-
 .inputfields{
     margin-top: 30px;
-
 }
-
-
 input {
-   
     border-radius: 30px;
     width: 350px;
     height: 60px;
     margin: 25px;
-      
+    padding-left: 30px;
 }
-
 .fields {
-   
     position: relative;
-    
 }
-
 .user {
   position: absolute;
   left: 60px;
   top: 45px;
-
 }
-  
+.tt:focus ~ .user{
+   display: none;
+}
 .email{
     position: absolute;
     left: 60px;
     top: 45px;
-  
 }
-
+.ema:focus ~ .email{
+    display: none;
+ }
 .password {
     position: absolute;
     left: 60px;
     top: 45px;
-  
 }
-
-/* rahel added   color,font size,flex,border,border-radiusx added img,background-color,border-radius,
-, height,width,padding mergin,media querie */
+.pass:focus ~ .password{
+    display: none;
+ }
+/*rahel added   color,font size,flex,border,border-radiusx added img,background-color,border-radius,
+, height,width,padding mergin,media querie*/
 h2 {
     text-align: center;
     font-size: 55px;
-    
 }
-
 .iconbuttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px; 
+    margin-left: 60px;
 }
-
 button {
     margin:  20px 50px ;
     color: white;
@@ -140,7 +103,6 @@ button {
     border: 2px solid white;
     font-size: 30px;
     padding: 5px;
-    
 }
 .social{
     margin-top: 10px ;
@@ -157,22 +119,54 @@ button {
     padding: 11px;
     margin-right: 17px;
     margin-top: 20px;
-    
 }
-
-
-@media screen and (max-width: 1100px) {
-    body 
-    {
-        width:100%;
+@media screen and (max-width: 1100px){
+    .box1 {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       }
+    .img{
+        width:  60%;
+        height: 70%;
+      } 
+    .box2{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    } 
+    input{
+        width: 80%;
+    }
+    button{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-       
-        
-  
-      }
-     
-  }
+        margin: 20px 10px;
+    }
+    .box1 {
+        width: 80%;
+        margin: auto;
+       }
+    .box2{
+        width: auto;
+       }
+    button{
+        width: 50%;
+        font-size: 18px;
+    }
+    .h3 {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 40px;
+    }
+}
 
   
